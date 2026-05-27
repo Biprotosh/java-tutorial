@@ -40,7 +40,7 @@ interface Breathable{
 
 class Animal{
     public void display(){
-        System.out.println("Displaying animan");
+        System.out.println("Displaying animal");
     }
 }
 
