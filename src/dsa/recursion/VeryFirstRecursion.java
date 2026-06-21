@@ -7,6 +7,7 @@ public class VeryFirstRecursion {
         fun2(10);
     }
 
+    // Example of a tail recursion
     public static void fun1(int n){
         if(n>0){
             System.out.print(n + " ");
@@ -14,6 +15,7 @@ public class VeryFirstRecursion {
         }
     }
 
+    // Example of a head recursion
     public static void fun2(int n){
         if(n>0){
             fun2(n-1);
