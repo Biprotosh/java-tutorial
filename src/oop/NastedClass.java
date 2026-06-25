@@ -1,4 +1,4 @@
-import java.sql.SQLOutput;
+package oop;
 
 public class NastedClass {
     public static void main(String[] args) {
@@ -7,8 +7,8 @@ public class NastedClass {
 
         inner.fun();
 
-//        C c = new C();
-//        C.D d = c.new D();
+//        oop.C c = new oop.C();
+//        oop.C.D d = c.new D();
         C.D d = new C().new D();
 
         d.greet();
@@ -19,7 +19,7 @@ public class NastedClass {
         Person person = new Person(){
             @Override
             public void introduce(){
-                System.out.println("Hi, I am a guest");
+                System.out.println("interfaces.Hi, I am a guest");
             }
         };
 
@@ -51,7 +51,7 @@ class Outer{
 
 class BankAccount{
 
-    // Made this class private so that it is invisible outside of BankAccount class
+    // Made this class private so that it is invisible outside of oop.BankAccount class
     // And we achieved logical grouping using static nested class
     // Works as a helper class
     private static class InterestCalculator{
@@ -75,7 +75,7 @@ class C{
     class D{
         int x = 20;
         public void greet(){
-            System.out.println("Hello world");
+            System.out.println("interfaces.Hello world");
             System.out.println(x);
             System.out.println(C.this.x);
         }
@@ -90,7 +90,7 @@ class E{
 
         class Local{
             public void greet2(){
-                System.out.println("Hello from local");
+                System.out.println("interfaces.Hello from local");
                 System.out.println(y);
             }
         }
@@ -103,7 +103,7 @@ class E{
 // Anonymous class
 class Person{
     void introduce(){
-        System.out.println("Hi, I am a person");
+        System.out.println("interfaces.Hi, I am a person");
     }
 }
 

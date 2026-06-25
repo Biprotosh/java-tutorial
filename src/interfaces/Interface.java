@@ -1,3 +1,5 @@
+package interfaces;
+
 public class Interface {
     public static void main(String[] args) {
         Bird b = new Bird();
@@ -23,33 +25,33 @@ interface Flyable{
 class Bird implements Flyable{
     @Override
     public void start(){
-        System.out.println("Bird is starting");
+        System.out.println("interfaces.Bird is starting");
     }
 
     @Override
     public void fly(){
-        System.out.println("Bird is flying");
+        System.out.println("interfaces.Bird is flying");
     }
 
     @Override
     public void stop(){
-        System.out.println("Bird is stopped");
+        System.out.println("interfaces.Bird is stopped");
     }
 }
 
 class Aeroplane implements Flyable{
     @Override
     public void start(){
-        System.out.println("Aeroplane is starting");
+        System.out.println("interfaces.Aeroplane is starting");
     }
 
     @Override
     public void fly(){
-        System.out.println("Aeroplane is flying");
+        System.out.println("interfaces.Aeroplane is flying");
     }
 
     @Override
     public void stop(){
-        System.out.println("Aeroplane is stopped");
+        System.out.println("interfaces.Aeroplane is stopped");
     }
 }

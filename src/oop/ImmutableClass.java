@@ -1,3 +1,5 @@
+package oop;
+
 public class ImmutableClass {
     public static void main(String[] args) {
         College college = new College("HITK", "Kolkata");
@@ -26,7 +28,7 @@ final class ExampleStudent{
     ExampleStudent(int age, String name, College college){
         this.age = age;
         this.name = name;
-//        this.college = college; // instead of directly refer to this.college, we will make a new object of College class
+//        this.college = college; // instead of directly refer to this.college, we will make a new object of oop.College class
         this.college = new College(college.name, college.address);
     }
 
@@ -38,7 +40,7 @@ final class ExampleStudent{
         return this.name;
     }
 
-//    public College getCollege(){
+//    public oop.College getCollege(){
 //        return this.college;
 //    }
 

@@ -1,4 +1,4 @@
-import com.sun.security.jgss.GSSUtil;
+package oop;
 
 public class Equals {
     public static void main(String[] args) {

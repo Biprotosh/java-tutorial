@@ -1,3 +1,5 @@
+package oop;
+
 public class Abstraction {
     public static void main(String[] args) {
         Car fc = new FuelCar();
@@ -15,11 +17,11 @@ public class Abstraction {
 
 abstract class Car{
 //    void start(){
-//        System.out.println("Car started");
+//        System.out.println("oop.Car started");
 //    }
 //
 //    void accelerate(){
-//        System.out.println("Car accelerate");
+//        System.out.println("oop.Car accelerate");
 //    }
 //
 //    void breakCar(){

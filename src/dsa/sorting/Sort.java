@@ -1,3 +1,5 @@
+package dsa.sorting;
+
 public class Sort {
     public static void main(String[] args) {
         int[] arr = {5, 2, 3, 1, 4};

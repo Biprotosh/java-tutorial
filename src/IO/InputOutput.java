@@ -1,3 +1,5 @@
+package IO;
+
 import java.io.*;
 
 public class InputOutput {
@@ -24,7 +26,7 @@ public class InputOutput {
  * 2. OS buffer (ASCII of Biprotosh)
  * 3. System.in (InputStream) receives bytes
  * 4. InputStreamReader converts stream of bytes to stream of characters
- *                  ('B', 'i', 'p', 'r', 'o', 't', 'o', 's', 'h')
+ *                  ('oop.B', 'i', 'p', 'r', 'o', 't', 'o', 's', 'h')
  * 5. BufferedReader stores the characters in its own buffer
  * 6. And using readLine() it will read the line and store it to name variable
  */

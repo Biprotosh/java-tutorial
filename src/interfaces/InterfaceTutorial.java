@@ -1,6 +1,8 @@
+package interfaces;
+
 public class InterfaceTutorial {
     public static void main(String[] args) {
-//        Walkable person = new Human(); // it don't have seat() method, so we cant call seat()
+//        interfaces.Walkable person = new interfaces.Human(); // it don't have seat() method, so we cant call seat()
         Seatable person = new Human();
         person.walk();
         person.seat();
@@ -52,7 +54,7 @@ interface Y extends X{
 
     @Override
     default void fun(){
-        System.out.println("Interface Y");
+        System.out.println("interfaces.Interface interfaces.Y");
     }
 }
 
@@ -61,7 +63,7 @@ interface Z extends X{
 
     @Override
     default void fun(){
-        System.out.println("Interface Z");
+        System.out.println("interfaces.Interface interfaces.Z");
     }
 }
 
@@ -70,7 +72,7 @@ class XYZ implements Y,Z{
     public void fun(){
 //        System.out.println("Default Implementation");
 
-        // want to use B/C implementation
+        // want to use oop.B/C implementation
         Y.super.fun();
         Z.super.fun();
     }
@@ -78,7 +80,7 @@ class XYZ implements Y,Z{
 
 class Hello {
     public void fun(){
-        System.out.println("Inside Hello class");
+        System.out.println("Inside interfaces.Hello class");
     }
 }
 

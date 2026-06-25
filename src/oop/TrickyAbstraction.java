@@ -1,3 +1,5 @@
+package oop;
+
 public class TrickyAbstraction {
     public static void main(String[] args) {
         Animal dog = new Dog("Piku");

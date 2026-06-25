@@ -1,3 +1,5 @@
+package enums;
+
 public class Enumerations {
     public static void main(String[] args) {
         System.out.println(PaymentStatus.SUCCESS);
@@ -34,25 +36,25 @@ enum Direction{
     NORTH(0){
         @Override
         public void move(){
-            System.out.println("Move up (Y+1)");
+            System.out.println("Move up (interfaces.Y+1)");
         }
     },
     EAST(90){
         @Override
         public void move(){
-            System.out.println("Move right (X+1)");
+            System.out.println("Move right (interfaces.X+1)");
         }
     },
     SOUTH(180){
         @Override
         public void move(){
-            System.out.println("Move down (Y-1)");
+            System.out.println("Move down (interfaces.Y-1)");
         }
     },
     WEST(270){
         @Override
         public void move(){
-            System.out.println("Move left (X-1)");
+            System.out.println("Move left (interfaces.X-1)");
         }
     };
 

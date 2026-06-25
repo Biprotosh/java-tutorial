@@ -1,3 +1,5 @@
+package oop;
+
 public class ConstructorChaining {
     public static void main(String[] args) {
         Student s1 = new Student();
@@ -44,6 +46,6 @@ class Student{
         System.out.println("Name -> " + name);
         System.out.println("Age -> " + age);
         System.out.println("Roll -> " + roll);
-        System.out.println("College name -> " + collegeName);
+        System.out.println("oop.College name -> " + collegeName);
     }
 }
