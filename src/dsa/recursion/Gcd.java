@@ -1,4 +1,4 @@
-package Recurssion;
+package dsa.recursion;
 
 public class Gcd {
     static int gcd(int a, int b){

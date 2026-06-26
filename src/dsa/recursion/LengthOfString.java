@@ -1,4 +1,4 @@
-package Recurssion;
+package dsa.recursion;
 
 public class LengthOfString {
     static int calLen(String s, int curr, int cnt){

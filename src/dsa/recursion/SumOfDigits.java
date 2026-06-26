@@ -1,4 +1,4 @@
-package Recurssion;
+package dsa.recursion;
 
 public class SumOfDigits {
     static int sumOfDigits(int num){

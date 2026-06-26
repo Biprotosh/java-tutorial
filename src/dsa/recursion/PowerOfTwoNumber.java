@@ -1,4 +1,4 @@
-package Recurssion;
+package dsa.recursion;
 
 public class PowerOfTwoNumber {
     static double cal(int base, int exponent){

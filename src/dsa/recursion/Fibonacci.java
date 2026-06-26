@@ -1,4 +1,4 @@
-package Recurssion;
+package dsa.recursion;
 
 public class Fibonacci {
     static void fib(int n, int first, int second){
