@@ -5,10 +5,10 @@ import java.util.*;
 public class Lamda {
     public static void main(String[] args) {
         List<Student> list = new ArrayList<>();
-        list.add(new Student("Doremon", 1, 85));
-        list.add(new Student("Nobita", 2, 4));
-        list.add(new Student("Schezuka", 3, 95));
-        list.add(new Student("Jiyan", 4, 25));
+        list.add(new Student("Doremon", 1, 85, 20));
+        list.add(new Student("Nobita", 2, 4, 20));
+        list.add(new Student("Schezuka", 3, 95, 20));
+        list.add(new Student("Jiyan", 4, 25, 20));
 
 //        Comparator<Student> c1 = new SortByRoll();
         Comparator<Student> c2 = new SortByName();
@@ -61,12 +61,13 @@ class SortByMarks implements Comparator<Student>{
 
 class Student implements Comparable<Student>{
     String name;
-    int roll, marks;
+    int roll, marks, age;
 
-    public Student(String name, int roll, int marks){
+    public Student(String name, int roll, int marks, int age){
         this.name = name;
         this.roll = roll;
         this.marks = marks;
+        this.age = age;
     }
 
     public void getter(){
