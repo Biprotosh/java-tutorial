@@ -1,4 +1,4 @@
-package lamdaExpression_FunctionalInterface;
+package FunctionalProgramming;
 
 public class FunctionalIntefacesTut {
     public static void main(String[] args) {

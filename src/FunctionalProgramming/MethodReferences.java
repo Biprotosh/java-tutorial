@@ -1,7 +1,6 @@
-package lamdaExpression_FunctionalInterface;
+package FunctionalProgramming;
 
 import java.util.*;
-import java.util.function.*;
 
 public class MethodReferences {
     public static void main(String[] args) {

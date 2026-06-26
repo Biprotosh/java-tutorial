@@ -1,4 +1,4 @@
-package lamdaExpression_FunctionalInterface;
+package FunctionalProgramming;
 
 import java.util.function.*;
 
