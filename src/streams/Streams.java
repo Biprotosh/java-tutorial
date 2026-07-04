@@ -27,8 +27,10 @@ public class Streams {
         // Infinite stream
         // iterate() generates stream from a previous value
         // depends on previous value
+        System.out.println();
         Stream.iterate(1, x -> x+1)
-                .limit(10) // instead of going infinite we set a limie
+                .limit(10) // instead of going infinite we set a limit
+                .skip(5) // skip first n elements
                 .forEach(System.out::println);
 
         // generate() generates stream without a previous value
