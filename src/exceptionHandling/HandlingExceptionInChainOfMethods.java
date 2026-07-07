@@ -58,7 +58,8 @@ public class HandlingExceptionInChainOfMethods {
     finally block always runs no matter whether exception occurs or not. It is optional block;
 
     catch block is also optional and if there is an exception in try block and there is only finally block then
-    the code written in finally will execute.
+    the code written in finally will execute. We can write multiple catch blocks and if there is multiple
+    catch blocks, jvm finds the appropriate catch in top-to bottom appraoch
 
     try{
         a/b
