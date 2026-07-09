@@ -15,4 +15,16 @@ public class StartVsRun {
 /*
     Can we start the same thread twice?
     -> No, if we try compiler will give IllegalThreadStateException
+
+    start() ->
+            Creates a new OS-level thread.
+            Runs code in a separate, new call stack.
+            Throws IllegalThreadStateException if called twice.
+            Enables asynchronous, parallel execution.
+
+    run() ->
+            Does not create a new thread.
+            Runs code inside the current calling thread (e.g., main).
+            Can be called multiple times like a standard method.
+            Forces sequential, blocking execution
  */
