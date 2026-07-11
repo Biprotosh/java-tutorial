@@ -1,8 +1,8 @@
-package multiThreading.problemsWithMultithreading;
+package multiThreading.locks;
 
-public class RaceConditionTut {
+public class SynchronizedBlock {
     public static void main(String[] args) {
-        Counter c1 = new Counter();
+        Counter1 c1 = new Counter1();
 
         Thread t1 = new Thread(() -> {
             for (int i = 1; i <= 1000; i++)
@@ -33,20 +33,22 @@ public class RaceConditionTut {
     }
 }
 
-class Counter{
+class Counter1{
     public int cnt = 0;
 
-//    void increment(){
-//        cnt++; // critical section
-//    }
+    void increment(){
+        // normal code
 
-    // we can solve this race condition using the keyword synchronized
-    synchronized void increment(){
-        cnt++;
+        synchronized (this){
+            cnt++;
+        }
+
+        // normal code
     }
 }
 
 /*
-    synchronized keyword locks the critical section where only one thread at a time can enter the critical section. It is one of
-    the way to solve race condition
+    synchronized blocked is used to make a part of code a critical section instead of making full method a critical section.
+    It is helpful because synchronized comes with overhead where it needs to acquire lock, release it. So it would be better
+    we only make synchronize the code which is actually comes under critical section
  */
