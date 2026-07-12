@@ -31,7 +31,7 @@ class SharedResource1{
     // locks
     StampedLock lock = new StampedLock();
 
-    public int read(){
+    public void read(){
         long stamp = lock.tryOptimisticRead();
 
         int currentValue = val;
@@ -53,7 +53,6 @@ class SharedResource1{
         }
 
         System.out.println(Thread.currentThread().getName() + " reads value to " + currentValue);
-        return currentValue;
     }
 
     public void write(int val){
