@@ -1,6 +1,6 @@
-package multiThreading.locks;
+package multiThreading.locksTut;
 
-public class Lock {
+public class LockTut {
     public static void main(String[] args) {
         Test tst = new Test();
 

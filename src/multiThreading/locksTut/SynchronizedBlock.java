@@ -1,4 +1,4 @@
-package multiThreading.locks;
+package multiThreading.locksTut;
 
 public class SynchronizedBlock {
     public static void main(String[] args) {
