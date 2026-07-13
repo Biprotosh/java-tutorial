@@ -5,7 +5,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
-public class FutureAncCallable {
+public class FutureAndCallable {
     public static void main(String[] args) {
         ExecutorService executer = Executors.newFixedThreadPool(2);
 
@@ -34,10 +34,10 @@ public class FutureAncCallable {
 
     but callable returns a value and exception is not lost, we can catch it.
 
-    Future<V> is used to store the value in future returned by submit()
+    Future<V> is used to store the value in future returned by submit(). It stores a value of an asynchronous result
     We cant use Integer because then it will be a synchronus code. Integer i expects a value immediatly but submit() gets the
     value when a thread fully executed the task.
-    And f1.get() is a special method because get() keeps the main thread waiting till the value is fetched then resumes the
+    And f1.get() is a special method because get() keeps the current thread waiting till the value is fetched then resumes the
     main thread.
 
     shutdown() tells I don't expect any more new task and waits for the current threads which are executing a task
