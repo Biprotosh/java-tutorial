@@ -52,7 +52,7 @@ class MultipleSeatBooking{
         for(int i = 0; i<5; i++){
             String currVal = arr.get(i);
 
-            if(!currVal.equals("EMPTY"))
+            if(!"EMPTY".equals(currVal)) // even if currVal is null, it just returns false. because equals() is called using a string literal
                 continue;
 
             if(arr.compareAndSet(i, "EMPTY", name)){
@@ -63,3 +63,9 @@ class MultipleSeatBooking{
         System.out.println(name + " could not find an available seat.");
     }
 }
+
+/*
+    TOCTOU = Time Of Check vs Time Of Use.
+    It's the gap between when you CHECK a condition and when you ACT on it. In that gap — another thread can change the world.
+    Your check becomes stale. Your action is based on a lie.
+ */

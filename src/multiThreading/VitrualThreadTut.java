@@ -33,3 +33,8 @@ public class VitrualThreadTut {
         }
     }
 }
+
+/*
+    When a virtual thread blocks (waiting for IO, sleep, lock) — the JVM unmounts it from the OS thread and parks it.
+    Another virtual thread takes over the OS thread immediately. Zero OS thread wasted on waiting.
+ */
